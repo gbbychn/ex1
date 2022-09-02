@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;700&display=swap');
+
+* {
+  box-sizing:border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0px;
+  font: 1rem/1.5rem 'Open Sans', sans-serif;
+}
+
+header, footer, .about, .container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+h1, h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+a {
+  transition: all .7s;
+}
+
+/*NAV*/
+
+.logo img {
+  width: 10%;
+  max-width: 116px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  text-transform: uppercase;
+  font: 600 14px/18px 'Open Sans', sans-serif;
+}
+
+nav li {
+  padding-left: 10px;
+}
+
+nav a:link, nav a:visited {
+  color: #585858;
+  text-decoration: none;
+}
+
+nav a:hover, nav a:active {
+  color: #252525;
+  text-decoration: underline;
+}
+
+/* HOME */
+
+#hero {
+  background: url(../images/hero.jpg) center no-repeat;
+  height: 400px;
+  background-size:cover;
+  background-position: center;
+}
+
+#hero .container {
+  background: #d9e5d9;
+  color: rgb(96, 96, 96);
+  opacity: 90%;
+  width: 100%;
+  margin: 0 auto;
+  padding: .3rem;
+  text-transform: uppercase;
+}
+
+#hero a:link, #hero a:visited {
+  border: 2px solid #ffffff;
+  color:white;
+  text-decoration: none;
+  padding: 2px 20px;
+  border-radius: .2em;
+}
+
+#hero a:hover, #hero a:active {
+  color:rgb(13, 13, 13);
+  background: #ffffff;
+}
+
+.pizza-ad {
+  background: url(../images/pizza_ad.jpg) center no-repeat;
+  height: 300px;
+  color: white;
+  text-align: right;
+  padding: 3rem 1.5rem 0 0;
+}
+
+.pizza-ad h1 {
+  width: 95%;
+
+}
+
+.map h1 {
+  background: #d9e5d9;
+  color: rgb(96, 96, 96);
+  margin: 20px auto 0;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.map img {
+  width: 100%;
+}
+
+/*THIRDS*/
+
+.trd {
+  text-align:center;
+  width: 33.3%;
+  padding: 70px 15px;
+}
+
+.underline{
+  text-decoration: underline;
+  color:gray;
+}
+
+/* GALLERY */
+
+.gallery {
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.gallery img {
+  width:100%;
+  height:100%;
+}
+
+.qtr {
+  width:25%;
+  margin:0;
+  padding:0;
+}
+
+/*FOOTER*/
+
+footer .flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  background: black;
+  color: #6b6b6b;
+  padding: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  width:100%;
+}
+
+footer h2 {
+  font-size: 4rem;
+  margin-bottom: .5rem;
+}
+
+footer h4 {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.mailing {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mailbox {
+  width: 100%;
+  margin-top:20px;
+  padding: 10px 5px;
+  height:35px;
+  color: #5D5D5D;
+  background: #ECECEC;
+  border: 2px solid;
+  font: 300 14px 'Open Sans', sans-serif;
+}
+
+.sign {
+  margin-top:20px;
+  height: 35px;
+  padding: 10px 5px;
+  color: #EAEAEA;
+  background: black;
+  border: 2px solid;
+  font: 600 14px 'Open Sans', sans-serif;
+  
+}
+
+label {
+    font: 600 17px/23px 'Open Sans', sans-serif;
+}
+
+/* Media Queries */
+@media (min-width: 280px) {
+  .no-mobile {
+  display: none;
+}
+}
+
+@media (min-width:768px) {
+  .no-mobile {
+    display: block;
+  }
+
+  .mobile {
+    display:none;
+  }
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #hero {
+    background: url(../images/hero.jpg) center no-repeat;
+    background-size:cover;
+    background-position: center;
+    color:white;
+  }
+
+  #hero .container {
+    background: rgba(0,0,0,.9);
+    color: white;
+    width: 45%;
+    margin: 0;
+    padding: 1rem;
+    text-align: right;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 1200px){
+  .no-mobile {
+    display: block;
+  }
+
+  .mobile {
+    display:none;
+  }
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #hero {
+    background: url(../images/hero.jpg) center no-repeat;
+    background-size:cover;
+    background-position: center;
+    color:white;
+  }
+
+  #hero .container {
+    background: rgba(0,0,0,.9);
+    color: white;
+    width: 45%;
+    margin: 0;
+    padding: 1rem;
+    text-align: right;
+    text-transform: uppercase;
+  }
+}
